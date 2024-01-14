@@ -10,6 +10,6 @@ Log_file_path = os.path.join(log_path,log_str)
 
 logging.basicConfig(
     filename = Log_file_path,
-    format = "[%(asctime)s: %(levelname)s: %(module)s: %(message)s].log",
+    format = "[%(asctime)s: %(levelname)s: %(module)s: %(message)s]",
     level= logging.INFO
 )
