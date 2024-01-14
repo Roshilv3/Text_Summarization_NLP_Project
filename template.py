@@ -22,6 +22,7 @@ Files_list = [
     "params.yaml",
     "app.py",
     "main.py",
+    "README.md",
     "requirements.txt",
     "setup.py",
     "research/trails.ipynb"
