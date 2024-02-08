@@ -1,6 +1,7 @@
 from src.text_summarization.pipeline.stage01_data_ingestion import *
 from src.text_summarization.pipeline.stage02_data_validation import *
 from src.text_summarization.pipeline.stage03_data_transformation import *
+from src.text_summarization.pipeline.stage04_model_trainer import *
 from src.text_summarization.logger import logging
 
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -33,3 +34,12 @@ try:
 except Exception as e:
     raise e
 
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+STAGE_NAME_04 = "MODEL TRAINER STAGE"
+try:
+    logging.info(f">>> {STAGE_NAME_04} started<<<")
+    data_transformation = ModelTrainingPipeline()
+    data_transformation.main()
+    logging.info(f">>> {STAGE_NAME_04} completed<<<\n\n -_-_-_-_-_-")
+except Exception as e:
+    raise e

@@ -1,2 +1,4 @@
 .text-summ-venv/
+.text-summ-venv/Lib/
+.text-summ-venv/Scripts/
 log/
