@@ -46,7 +46,7 @@ class ModelTrainer:
         trainer = Trainer(model= model_pegasus, args= trainer_args,
                           data_collator=seq2seq_data_collector,
                           tokenizer=tokenizer,
-                          train_dataset=dataset_samsum_pt["test"],
+                          train_dataset=dataset_samsum_pt["train"],
                           eval_dataset=dataset_samsum_pt["validation"])
         
         trainer.train()
