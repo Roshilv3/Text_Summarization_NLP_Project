@@ -88,6 +88,7 @@ class ConfigurationManager:
             num_train_epochs= params.num_train_epochs,
             warmup_steps= params.warmup_steps,
             per_device_train_batch_size= params.per_device_train_batch_size,
+            per_device_eval_batch_size= params.per_device_eval_batch_size,
             weight_decay= params.weight_decay,
             logging_steps= params.logging_steps,
             evaluation_strategy= params.evaluation_strategy,
